@@ -1,0 +1,41 @@
+#orders-table table{
+    color: #252525;
+}
+
+#orders-table th{
+    font-weight: 700;
+    color: #f46f34;
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+#dashboard{
+    margin: 0;
+    padding-top: 25px;
+    background-color: #fafafa;
+    color: #5064de;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: #5064de;
+  border-bottom: #e7c62d 3px solid;
+}
+
+.nav-link:hover {
+    color: #fff;
+  }
+
+.waiting{
+    background-color: #5064de;
+}
+
+.pickedup{
+    background-color: #09c372;
+}
+
+.returned{
+    background-color: #ff3860;
+}

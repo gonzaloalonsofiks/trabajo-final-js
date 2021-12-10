@@ -1,0 +1,50 @@
+#createAccountForm{
+    max-width: 450px;
+}
+
+#createAccountForm button{
+    margin-top: 50px;
+}
+
+.signin-container input{
+    margin: 5px 0px 20px 0px;
+}
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-control label{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-control input{
+    border: 3px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus{
+    outline: 2px #e7c62d solid;
+}
+
+.input-control.success input{
+    border-color: #09c372; 
+}
+
+.input-control.form-error input{
+    border-color: #ff3860;
+}
+
+.error-message {
+    color: #e7c62d;
+    font-size: 16px;
+    height: 25px;
+    margin-top: -15px;
+}
