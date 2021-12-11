@@ -65,25 +65,3 @@ $('#user-name').text(userNameDisplay)
 $('#companyName').text('de ' + userCompanyDisplay)
 
 });
-
-// Función que setea el color de los estados del envío
-//let orderStatusValue = getElementById('orderStatus')
-
-
-/* function setColorCoding(element, color){
-    const statusContainer = element.parent()
-    //const colorDisplay = statusContainer.querySelector('#order-status')
-
-    statusContainer.addClass(color)
-}
-
-if (orderStatusValue === "En espera"){
-    setColorCoding('waiting')
-}
-else if (orderStatusValue === "Retirado"){
-    setColorCoding('pickedup')
-}
-else if(orderStatusValue === "Devuelto")
-{
-    setColorCoding('returned')
-} */
