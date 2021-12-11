@@ -2,6 +2,14 @@
     max-width: 450px;
 }
 
+.login-form{
+    max-width: 450px;
+}
+
+.login-form button{
+    margin-top:50px;
+}
+
 #createAccountForm button{
     margin-top: 50px;
 }
@@ -35,7 +43,7 @@
 }
 
 .input-control.success input{
-    border-color: #09c372; 
+    border-color: #09c372;
 }
 
 .input-control.form-error input{

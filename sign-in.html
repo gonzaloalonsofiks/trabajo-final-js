@@ -13,28 +13,35 @@
     <title>Iniciá sesión en Pickapp</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/create-account.css">
 
 </head>
 <body>
     <main class="container text-center signin-container">
         <section class="form-signin">
-            <form method="POST" action="sign-in.html">
+            <form method="POST" action="sign-in.html" class="login-form">
                 <nav class="navbar-light">
                     <a class="navbar-brand" href="./index.html">Pickapp</a>
                 </nav>
 
                 <h1 class="h3 mb-3 fw-normal">Ingresá a tu cuenta</h1>
 
-              <div class="form-floating">
-                <input type="email" class="form-control" id="emailLogin" placeholder="nombre@email.com">
-                <label for="floatingInput">Email</label>
-              </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="passwordLogin" placeholder="Contraseña">
-                <label for="floatingPassword">Contraseña</label>
+              <div class="input-control">
+                <label for="emailLogin">Email</label>
+                <input type="email" class="form-control" id="emailLogin">
+                <div class="field-error"></div>
               </div>
 
+              <div class="input-control">
+                <label for="passwordLogin">Contraseña</label>
+                <input type="password" class="form-control" id="passwordLogin">
+                <div class="field-error"></div>
+              </div>
+
+              <div class="form-error"></div>
+
               <button id="login-btn" class="btnw-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+
 
               <p class="alternative">¿Primera vez? <a href="./create-account.html">Creá una cuenta</a> </p>
             </form>

@@ -8,15 +8,17 @@ $(document).ready(function () {
 
         const usersData = answer
         if (status === "success") {
-            // Chequeo por consola que lo haya importado (hasta ahí OK, por eso no lo muestro)
-            //console.log(usersData);
+            // Push a la consola para confirmar la importación
+            console.log("Data loaded ok");
         }
 
     // Acción de hacer click en el botón
 
     $('#login-btn').on('click', function (e){
         e.preventDefault();
-        isUser() //Verifica si está en la "base de datos (JSON)
+        // Verifica si es usuario de la plataforma
+
+        isUser()
         })
 
         function isUser(){
@@ -31,11 +33,12 @@ $(document).ready(function () {
                     return
                 }
             }
-            alert("Error")
+            let errorBox = $('.form-error')
+
+            errorBox.html('Alguno de los datos ingresados no es correcto o está incompleto.')
 
         }
     })
-
 
 
 });

@@ -34,7 +34,6 @@ form.addEventListener('submit', e =>{
     e.preventDefault()
     validateInputs()
     createUser()
-    //window.location = "/dashboard.html"
 })
 
 //Función que marca error en el formulario
