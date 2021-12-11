@@ -14,7 +14,7 @@ $.getJSON(dataInput, function (answer, status){
                 <th scope="col" class="no-wrap">ID Comercio</th>
                 <th scope="col">Comercio</th>
                 <th scope="col">Dirección</th>
-                <th scope="col" id="order-status">Estado</th>
+                <th id="order-status" scope="col">Estado</th>
                 <th scope="col">Actualizado</th>
             </thead>
                 <tbody id="table-content">
@@ -24,8 +24,8 @@ $.getJSON(dataInput, function (answer, status){
     }
 
     if (status  = "success"){
-        let userData = answer;
-        for (const order of userData) {
+        let ordersData = answer;
+        for (const order of ordersData) {
             $('#table-content').append(
                 `<tr scope="row">
                     <td>${order.order_id}</td>
@@ -39,9 +39,18 @@ $.getJSON(dataInput, function (answer, status){
                     <td>${order.order_status}</td>
                     <td>${order.date}</td>
                 </tr>
-
                 `
             )
+        let orderStatusValue = ordersData.order_status
+        if(orderStatusValue === "En espera"){
+            $('#order-status').addClass('waiting')
+        }
+        else if (orderStatusValue === "Retirado"){
+            $('#order-status').addClass('pickedup')
+        }
+        else{
+            $('#order-status').addClass('returned')
+        }
         }
     }
 
@@ -53,16 +62,19 @@ let userNameDisplay = userInfoParsed.userName
 let userCompanyDisplay = userInfoParsed.userCompany
 
 $('#user-name').text(userNameDisplay)
-$('#companyName').text(userCompanyDisplay)
+$('#companyName').text('de ' + userCompanyDisplay)
+
+});
 
 // Función que setea el color de los estados del envío
-let orderStatusValue = $('#order-status').val()
+//let orderStatusValue = getElementById('orderStatus')
 
-function setColorCoding(element, color){
-    const statusContainer = element.parentElement
-    const colorDisplay = statusContainer.querySelector('#order-status')
 
-    colorDisplay.addClass(color)
+/* function setColorCoding(element, color){
+    const statusContainer = element.parent()
+    //const colorDisplay = statusContainer.querySelector('#order-status')
+
+    statusContainer.addClass(color)
 }
 
 if (orderStatusValue === "En espera"){
@@ -74,4 +86,4 @@ else if (orderStatusValue === "Retirado"){
 else if(orderStatusValue === "Devuelto")
 {
     setColorCoding('returned')
-}});
+} */

@@ -1,5 +1,6 @@
 #orders-table table{
     color: #252525;
+    font-size: 14px;
 }
 
 #orders-table th{
@@ -21,15 +22,16 @@
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     background-color: #5064de;
-  border-bottom: #e7c62d 3px solid;
+    border-bottom: #e7c62d 3px solid;
 }
 
 .nav-link:hover {
     color: #fff;
-  }
+}
 
 .waiting{
     background-color: #5064de;
+    color: red;
 }
 
 .pickedup{
