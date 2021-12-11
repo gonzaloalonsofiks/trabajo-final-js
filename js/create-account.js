@@ -33,7 +33,7 @@ const userCompany = document.getElementById('inputCompany')
 form.addEventListener('submit', e =>{
     e.preventDefault()
     validateInputs()
-    createUser()
+
 })
 
 //Función que marca error en el formulario
@@ -122,6 +122,10 @@ function validateInputs(){
     }
     else{
         setSuccess(userCompany)
+    }
+    if(userNameValue !== '' && userLastNameValue !== '' && userEmailValue !== '' && userCompanyValue !== '' && userPasswordValue !== '') {
+        createUser()
+        location.assign("first-steps.html")
     }
 
 }

@@ -1,0 +1,80 @@
+.complete{
+    background-color: #09c372;
+}
+
+.pending{
+    background-color: #e7c62d;
+}
+.flow-pill{
+    font-weight:500;
+    background-color: #fafafa;
+    padding: 5px 10px;
+    border-radius:4px;
+    text-align: center;
+}
+
+.flow-goal{
+    color: #09c372;
+}
+
+.flow-next{
+    color: #777;
+}
+
+.flow-button{
+    text-decoration: none;
+}
+
+.hours-container{
+    padding: 0px 25px;
+    margin-bottom: 150px;
+}
+
+.hourForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.day{
+    height:75px;
+}
+
+.day select{
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.hour, .min{
+    margin-right: 10px;
+}
+
+#label{
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: 600;
+
+}
+
+span{
+    margin-left: 10px;
+}
+
+.btn-save{
+    background-color: #999;
+    border: none;
+    margin-top: 50px;
+}
+
+.btn-save:focus{
+    outline: 2px solid #e7c62d;
+}
+
+.btn-save:hover{
+    background-color: #09c372;
+}
+.btn-save:active{
+    background-color: #09c372;
+}

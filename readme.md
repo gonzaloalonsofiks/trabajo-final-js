@@ -8,7 +8,7 @@ En este documento se incluyen notas, aclaraciones y comentarios sobre el proyect
 
 ### Funcionalidades
 
-- El formulario de Crear Cuenta ahora se valida usando color coding y marca alertas con los errores de cada campo.
+- El formulario de Crear Cuenta ahora se valida usando color coding y marca alertas con los errores de cada campo. Además redirige a la página de primeros pasos, donde se pueden configurar los horarios de atención.
 
 - Al enviar el formulario, se crea un usuario en el array usersList y se guarda en el Local Storage
 
